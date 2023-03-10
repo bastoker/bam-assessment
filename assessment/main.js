@@ -12,7 +12,7 @@ export const countWords = input => {
   return 0;
 }
 
-const MAX_LENGTH = 44;
+const MAX_LINE_LENGTH = 44;
 
 // OPDRACHT 2
 export const textFormatter = input => {
