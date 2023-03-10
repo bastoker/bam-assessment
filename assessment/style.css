@@ -37,8 +37,9 @@ h1 {
   white-space: pre;
   background-color: black;
   color: #eee;
-  border: 10px solid #e25303;
+  border: 6px solid #e25303;
   box-shadow: 20px;
+  border-radius: 6px;
 }
 
 .example {
