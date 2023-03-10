@@ -1,23 +1,59 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+// Resources:
+// 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+//
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+// 
 
-setupCounter(document.querySelector('#counter'))
+const inputText =      
+`12345678901234567890123456789012345678901234
+--------------------------------------------
+
+Dit is een lang verhaal dat lange zinnen bevat.  Deze passen niet altijd op 1 regel.
+Deze moet anders worden geformatteerd. woorden mogen niet worden opgesplitst. Je mag ervan uitgaan dat woorden niet langer zijn dan 44 tekens.
+
+
+In de input zitten ook newlines. Deze moeten bewaard blijven.
+`;
+
+// ASSIGNMENT 1
+export const countWords = input => {
+  return 0;
+}
+
+const MAX_LENGTH = 44;
+
+// OPDRACHT 2
+export const textFormatter = input => {
+  return input;
+ }
+
+
+
+// Show output on screen:
+let [output] = document.getElementsByClassName("output");
+let [wordCount] = document.getElementsByClassName("wordCount");
+output.innerHTML = textFormatter(inputText);
+wordCount.innerHTML = countWords(inputText);
+
+const exampleOutputText = 
+`12345678901234567890123456789012345678901234
+--------------------------------------------
+
+Dit is een lang verhaal dat lange zinnen
+bevat.  Deze passen niet altijd op 1 regel.
+Deze moet anders worden geformatteerd.
+woorden mogen niet worden opgesplitst. Je
+mag ervan uitgaan dat woorden niet langer
+zijn dan 44 tekens.
+
+
+In de input zitten ook newlines. Deze moeten
+bewaard blijven.
+`;
+
+// Geef example weer op scherm:
+let [example] = document.getElementsByClassName("example");
+example.innerHTML = textFormatter(exampleOutputText);
