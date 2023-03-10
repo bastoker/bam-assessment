@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 :root {
-  background-color: lightBlue;
+  background-color: #00387b; /* NS blauw */
   font-family: 'Roboto', sans-serif;
+  color: #ccc;
 }
 
 body {
@@ -36,11 +37,11 @@ h1 {
   white-space: pre;
   background-color: black;
   color: #eee;
-  border: 10px solid orange;
+  border: 10px solid #e25303;
   box-shadow: 20px;
 }
 
 .example {
-  border-color: green;
+  border-color: #e25303;
 }
 
